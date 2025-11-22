@@ -1,0 +1,12 @@
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\bin\Debug\TiendaVirtual.exe.config
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\bin\Debug\TiendaVirtual.exe
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\bin\Debug\TiendaVirtual.pdb
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\bin\Debug\System.Data.SqlClient.dll
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\bin\Debug\System.Data.SqlClient.xml
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVirtual.csproj.AssemblyReference.cache
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVirtual.Properties.Resources.resources
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVirtual.csproj.GenerateResource.cache
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVirtual.csproj.CoreCompileInputs.cache
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVi.47C15EA4.Up2Date
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVirtual.exe
+C:\Users\ingri\OneDrive\Desktop\Tienda Virtual\TiendaVirtual\TiendaVirtual\obj\Debug\TiendaVirtual.pdb
