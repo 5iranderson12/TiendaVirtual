@@ -105,36 +105,34 @@ namespace TiendaVirtual.Forms
 
             panelBusqueda.Controls.Add(txtBusqueda);
 
-            // Botón carrito (MÁS VISIBLE)
+            // Botón carrito 
             btnCarrito = new Button
             {
                 Text = "🛒 CARRITO",
-                Location = new Point(this.Width - 270, 20),
+                Location = new Point(1050, 20),
                 Size = new Size(230, 45),
                 Font = new Font("Segoe UI", 13, FontStyle.Bold),
                 BackColor = ColorTranslator.FromHtml("#E50914"),
                 ForeColor = Color.White,
                 FlatStyle = FlatStyle.Flat,
-                Cursor = Cursors.Hand,
-                Anchor = AnchorStyles.Top | AnchorStyles.Right
+                Cursor = Cursors.Hand
             };
             btnCarrito.FlatAppearance.BorderSize = 0;
             btnCarrito.Click += BtnCarrito_Click;
             btnCarrito.MouseEnter += (s, e) => btnCarrito.BackColor = ColorTranslator.FromHtml("#F40612");
             btnCarrito.MouseLeave += (s, e) => btnCarrito.BackColor = ColorTranslator.FromHtml("#E50914");
 
-            // Contador de productos en carrito (badge) - MÁS VISIBLE
+            // Contador de productos en carrito (badge) - VISIBLE
             lblContadorCarrito = new Label
             {
                 Text = "0",
                 Size = new Size(35, 35),
-                Location = new Point(btnCarrito.Right - 25, btnCarrito.Top - 12),
+                Location = new Point(1260, 8),
                 BackColor = ColorTranslator.FromHtml("#FFD700"),
                 ForeColor = Color.Black,
                 Font = new Font("Segoe UI", 13, FontStyle.Bold),
                 TextAlign = ContentAlignment.MiddleCenter,
-                Visible = false,
-                Anchor = AnchorStyles.Top | AnchorStyles.Right
+                Visible = false
             };
 
             // Hacer el badge circular
@@ -145,20 +143,20 @@ namespace TiendaVirtual.Forms
                 lblContadorCarrito.Region = new Region(path);
             };
 
-            // Panel banner principal (más pequeño)
+            // Panel banner principal (MÁS PEQUEÑO)
             panelBanner = new Panel
             {
                 Location = new Point(0, 80),
-                Size = new Size(this.Width, 350),
+                Size = new Size(this.Width, 280),
                 BackColor = ColorTranslator.FromHtml("#1E1E1E"),
                 Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right
             };
 
-            // Panel catálogo con scroll (MÁS GRANDE)
+            // Panel catálogo con scroll (EMPIEZA MÁS ARRIBA)
             panelCatalogo = new Panel
             {
-                Location = new Point(0, 430),
-                Size = new Size(this.Width, this.Height - 430),
+                Location = new Point(0, 360),
+                Size = new Size(this.Width, this.Height - 360),
                 BackColor = ColorTranslator.FromHtml("#141414"),
                 AutoScroll = true,
                 Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right
@@ -209,48 +207,48 @@ namespace TiendaVirtual.Forms
                 BackColor = ColorTranslator.FromHtml("#1E1E1E")
             };
 
-            // Contenido del banner
+            // Contenido del banner (MÁS COMPACTO)
             Label lblCategoria = new Label
             {
                 Text = productoDestacado.NombreCategoria.ToUpper(),
-                Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                Font = new Font("Segoe UI", 12, FontStyle.Bold),
                 ForeColor = ColorTranslator.FromHtml("#E50914"),
-                Location = new Point(50, 50),
+                Location = new Point(50, 20),
                 AutoSize = true
             };
 
             Label lblNombre = new Label
             {
                 Text = productoDestacado.Nombre,
-                Font = new Font("Segoe UI", 36, FontStyle.Bold),
+                Font = new Font("Segoe UI", 24, FontStyle.Bold),
                 ForeColor = Color.White,
-                Location = new Point(50, 90),
-                Size = new Size(700, 100)
+                Location = new Point(50, 50),
+                Size = new Size(700, 50)
             };
 
             Label lblDescripcion = new Label
             {
                 Text = productoDestacado.Descripcion,
-                Font = new Font("Segoe UI", 14),
+                Font = new Font("Segoe UI", 11),
                 ForeColor = ColorTranslator.FromHtml("#B3B3B3"),
-                Location = new Point(50, 200),
-                Size = new Size(700, 80)
+                Location = new Point(50, 110),
+                Size = new Size(700, 50)
             };
 
             Label lblPrecio = new Label
             {
                 Text = $"${productoDestacado.PrecioVenta:N2}",
-                Font = new Font("Segoe UI", 28, FontStyle.Bold),
+                Font = new Font("Segoe UI", 22, FontStyle.Bold),
                 ForeColor = ColorTranslator.FromHtml("#E50914"),
-                Location = new Point(50, 300),
+                Location = new Point(50, 170),
                 AutoSize = true
             };
 
             Button btnAgregarBanner = new Button
             {
-                Text = "➕ AGREGAR AL CARRITO",
-                Location = new Point(50, 360),
-                Size = new Size(250, 50),
+                Text = "🛒 AGREGAR AL CARRITO",
+                Location = new Point(50, 215),
+                Size = new Size(250, 45),
                 Font = new Font("Segoe UI", 12, FontStyle.Bold),
                 BackColor = ColorTranslator.FromHtml("#E50914"),
                 ForeColor = Color.White,
@@ -260,6 +258,8 @@ namespace TiendaVirtual.Forms
             };
             btnAgregarBanner.FlatAppearance.BorderSize = 0;
             btnAgregarBanner.Click += BtnAgregarProducto_Click;
+            btnAgregarBanner.MouseEnter += (s, e) => btnAgregarBanner.BackColor = ColorTranslator.FromHtml("#F40612");
+            btnAgregarBanner.MouseLeave += (s, e) => btnAgregarBanner.BackColor = ColorTranslator.FromHtml("#E50914");
 
             panelGradiente.Controls.Add(lblCategoria);
             panelGradiente.Controls.Add(lblNombre);
@@ -317,7 +317,9 @@ namespace TiendaVirtual.Forms
                 panelCatalogo.Controls.Add(panelProductos);
                 yOffset += 380;
             }
-        }// Continuación de FormMain.cs
+        }
+
+        // Continuación de FormMain.cs
 
         private Panel CrearCardProducto(Producto producto)
         {
